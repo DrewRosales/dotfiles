@@ -54,6 +54,21 @@ vim.cmd([[
       tag = 'nightly' -- optional, updated every week. (see issue #1193)
     }
 
+    use("hrsh7th/nvim-cmp")
+    use("hrsh7th/cmp-buffer")
+    use("hrsh7th/cmp-path")
+    
+    use("L3MON4D3/LuaSnip")
+    use("saadparwaiz1/cmp_luasnip")
+    use("rafamadriz/friendly-snippets")
+
+    -- managing & installing LSP servers
+    use("williamboman/mason.nvim")
+    use("williamboman/mason-lspconfig.nvim")
+
+    -- configuring the LSP servers
+    use("neovim/nvim-lspconfig")
+
     if packer_bootstrap then
     require("packer").sync()
   end
