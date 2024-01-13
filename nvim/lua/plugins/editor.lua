@@ -19,6 +19,7 @@ return {
             hidden = true,
           })
         end,
+        desc = "Find Files",
       },
       {
         "<leader>fw",
@@ -28,6 +29,7 @@ return {
             additional_args = { "--hidden" },
           })
         end,
+        desc = "Live Grep",
       },
     },
 
