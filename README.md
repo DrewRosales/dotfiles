@@ -14,18 +14,14 @@ Keybinds:
 `<C-a> 0-9` - switch to window number <br>
 `<C-a> v` - split vertical <br>
 `<C-a> s` - split horizontal <br>
-<cr>
 `<C-a> h` - left <br>
 `<C-a> j` - down <br>
 `<C-a> k` - up <br> 
 `<C-a> l` - right <br>
- <cr>
 `<C-a> z` - zoom <br>
- <cr>
 * Uppercase for session management
 `<C-a> S` choose-session <br>
 `<C-a> R` rename-session <br>
 `<C-a> X` delete-session <br>
 `</C-a> C` new-session <br>
- <cr>
 `<C-a> ^D` detach <br>
