@@ -2,4 +2,7 @@ iterm2/
 fish/
 
 tmux/plugins/*
+!tmux/plugins/catppuccin-tmux
+tmux/plugins/catppuccin-tmux/*
 !tmux/plugins/catppuccin-tmux/catppuccin-dark.tmuxtheme
+
