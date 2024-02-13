@@ -1,4 +1,4 @@
-# TMUX
+## TMUX
 
 Utilizes TPM to manage and install plugins
 
