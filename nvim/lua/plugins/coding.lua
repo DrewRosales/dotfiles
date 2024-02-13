@@ -56,6 +56,11 @@ return {
       local luasnip = require("luasnip")
       local cmp = require("cmp")
 
+      cmp.setup({
+        completion = {
+          completionopt = "menu,menuone,select",
+        },
+      })
       opts.mapping = vim.tbl_extend("force", opts.mapping, {
         ["<Tab>"] = cmp.mapping(function(fallback)
           if cmp.visible() then
