@@ -7,7 +7,7 @@ Install TPM:
 `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm/`
 
 Keybinds:
-* Lowercase for window/pane management
+* Lowercase for window/pane management <br>
 `<C-a> c` - create new window <br>
 `<C-a> x` - close pane <br>
 `<C-a> r` - rename window <br>
@@ -19,7 +19,7 @@ Keybinds:
 `<C-a> k` - up <br> 
 `<C-a> l` - right <br>
 `<C-a> z` - zoom <br>
-* Uppercase for session management
+* Uppercase for session management <br>
 `<C-a> S` choose-session <br>
 `<C-a> R` rename-session <br>
 `<C-a> X` delete-session <br>
