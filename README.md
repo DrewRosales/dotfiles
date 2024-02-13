@@ -8,25 +8,25 @@ Install TPM:
 
 Keybinds:
 * Lowercase for window/pane management
-`<C-a> c` - create new window
-`<C-a> x` - close pane
-`<C-a> r` - rename window
-`<C-a> 0-9` - switch to window number
-`<C-a> v` - split vertical
-`<C-a> s` - split horizontal
-
-
-`<C-a> h` - left
-`<C-a> j` - down
-`<C-a> k` - up 
-`<C-a> l` - right
-
-`<C-a> z` - zoom
-
+`<C-a> c` - create new window <br>
+`<C-a> x` - close pane <br>
+`<C-a> r` - rename window <br>
+`<C-a> 0-9` - switch to window number <br>
+`<C-a> v` - split vertical <br>
+`<C-a> s` - split horizontal <br>
+ <br>
+ <br>
+`<C-a> h` - left <br>
+`<C-a> j` - down <br>
+`<C-a> k` - up <br> 
+`<C-a> l` - right <br>
+ <br>
+`<C-a> z` - zoom <br>
+ <br>
 * Uppercase for session management
-`<C-a> S` choose-session
-`<C-a> R` rename-session
-`<C-a> X` delete-session
-`</C-a> C` new-session
-
-`<C-a> ^D` detach
+`<C-a> S` choose-session <br>
+`<C-a> R` rename-session <br>
+`<C-a> X` delete-session <br>
+`</C-a> C` new-session <br>
+ <br>
+`<C-a> ^D` detach <br>
