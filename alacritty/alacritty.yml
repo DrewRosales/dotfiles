@@ -30,9 +30,9 @@ window:
   # must be non-zero for this to take effect. The number of columns must be at
   # least `2`, while using a value of `0` for columns and lines will fall back
   # to the window manager's recommended size
-  #dimensions:
-  #  columns: 0
-  #  lines: 0
+  dimensions:
+    columns: 160
+    lines: 48
 
   # Window position (changes require restart)
   #
@@ -55,7 +55,7 @@ window:
 
   # Window decorations
   #
-  decorations: full
+  decorations: none
   # None
   #
   # Values for `decorations` (macOS only):
@@ -111,18 +111,18 @@ window:
 # Font configuration
 font:
   normal:
-    family: Mononoki Nerd Font
-    style: Regular 
+    family: RobotoMono Nerd Font Propo
+    style: Regular
   bold:
-    family: Mononoki Nerd Font
+    family: RobotoMono Nerd Font Mono
     style: Bold
   italic:    
-    family: Mononoki Nerd Font
-    style: Italic
+    family: RobotoMono Nerd Font Mono
+    style: Light Italic
   bold_italic:
-    family: Mononoki Nerd Font
+    family: RobotoMono Nerd Font Mono
     style: Bold Italic
-  size: 16
+  size: 14
 draw_bold_text_with_bright_colors: true
 
 colors:
