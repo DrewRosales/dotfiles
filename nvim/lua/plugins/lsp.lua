@@ -15,7 +15,7 @@ return {
         "pyright", --python
         "jdtls", --java
         "json-lsp", --json
-        "ltex-ls", --latex
+        -- "ltex-ls", --latex
         "shfmt", --sh format
         "marksman", -- markdown
         "yaml-language-server", --yaml
@@ -100,7 +100,7 @@ return {
         bashls = {},
         dockerls = {},
         jsonls = {},
-        ltex = {},
+        -- ltex = {},
         yamlls = {},
       }, -- !servers
 
