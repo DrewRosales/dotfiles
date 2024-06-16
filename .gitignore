@@ -1,5 +1,9 @@
 *
 !nvim
+!nvim/*
 !tmux
+!tmux/*
 !alacritty
+!alacritty/*
 !awesome
+!awesome/*
