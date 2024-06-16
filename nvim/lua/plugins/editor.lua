@@ -3,7 +3,7 @@ return {
     "telescope.nvim",
     dependencies = {
       {
-        "nvim-telescope/telescope-fzf-native.nvim",
+        "nvim-telescope/telescope-live-grep-args.nvim",
         build = "make",
       },
       -- "nvim-telescope/telescope-file-browser.nvim",
@@ -24,8 +24,8 @@ return {
       {
         "<leader>fw",
         function()
-          local builtin = require("telescope.builtin")
-          builtin.live_grep({
+          local builtin = require("telescope").extensions.live_grep_args
+          builtin.live_grep_args({
             additional_args = { "--hidden" },
           })
         end,
@@ -35,7 +35,6 @@ return {
 
     config = function(_, opts)
       local telescope = require("telescope")
-      local actions = require("telescope.actions")
       --  local fb_actions = require("telescope").extensions.file_browser.actions
 
       opts.defaults = vim.tbl_deep_extend("force", opts.defaults, {
@@ -46,6 +45,11 @@ return {
         winblend = 0,
         mappings = {
           n = {},
+        },
+        extensions = {
+          live_grep_args = {
+            auto_quoting = true,
+          },
         },
       })
       opts.pickers = {

@@ -2,6 +2,9 @@
 -- found (e.g. lgi). If LuaRocks is not installed, do nothing.
 pcall(require, "luarocks.loader")
 
+-- User library
+local drew = require("drew")
+
 -- Standard awesome library
 local gears = require("gears")
 local awful = require("awful")
@@ -601,6 +604,6 @@ client.connect_signal("unfocus", function(c)
 end)
 -- }}}
 
--- autostart through shell
-awful.spawn.with_shell("")
-
+--{{{ Application Starts
+awful.spawn.with_shell("~/.config/awesome/autostart.sh")
+--}}}
