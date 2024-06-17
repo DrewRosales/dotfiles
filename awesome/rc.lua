@@ -17,6 +17,17 @@ local beautiful = require("beautiful")
 local naughty = require("naughty")
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup")
+
+-- special layout imports
+local treetile = require("treetile")
+local machi = require("layout-machi")
+local cyclefocus = require("cyclefocus")
+
+local dpi = require("beautiful.xresources").apply_dpi
+
+local io = io
+local cairo = require("lgi").cairo
+
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
@@ -62,7 +73,7 @@ beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"
-editor = os.getenv("EDITOR") or "editor"
+editor = os.getenv("EDITOR") or "nvim"
 editor_cmd = terminal .. " -e " .. editor
 
 -- Default modkey.
@@ -71,27 +82,36 @@ editor_cmd = terminal .. " -e " .. editor
 -- I suggest you to remap Mod4 to another key using xmodmap or other tools.
 -- However, you can use another modifier like Mod1, but it may interact with others.
 modkey = "Mod4"
+altkey = "Mod1"
+ctrlkey = "Control"
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
-	awful.layout.suit.floating,
+	treetile,
+	machi.default_layout,
 	awful.layout.suit.tile,
-	awful.layout.suit.tile.left,
+	awful.layout.suit.floating,
 	awful.layout.suit.tile.bottom,
-	awful.layout.suit.tile.top,
-	awful.layout.suit.fair,
-	awful.layout.suit.fair.horizontal,
 	awful.layout.suit.spiral,
 	awful.layout.suit.spiral.dwindle,
 	awful.layout.suit.max,
 	awful.layout.suit.max.fullscreen,
 	awful.layout.suit.magnifier,
-	awful.layout.suit.corner.nw,
 	-- awful.layout.suit.corner.ne,
 	-- awful.layout.suit.corner.sw,
 	-- awful.layout.suit.corner.se,
 }
 -- }}}
+
+lain.layout.termfair.nmaster = 3
+lain.layout.termfair.ncol = 1
+lain.layout.termfair.center.nmaster = 1
+lain.layout.termfair.center.ncol = 1
+lain.layout.cascade.tile.offset_x = dpi(2)
+lain.layout.cascade.tile.offset_y = dpi(32)
+lain.layout.cascade.tile.extra_padding = dpi(5)
+lain.layout.cascade.tile.nmaster = 5
+lain.layout.cascade.tile.ncol = 2
 
 -- {{{ Menu
 -- Create a launcher widget and a main menu
