@@ -1,9 +1,10 @@
 return {
-  "tokyonight.nvim",
+  "folke/tokyonight.nvim",
+  lazy = false,
   priority = 1000,
   opts = function()
     return {
-      style = "dark",
+      style = "moon",
       transparent = true,
       styles = {
         sidebars = "transparent",
