@@ -178,7 +178,7 @@ theme.titlebar_sticky_button_focus_active_hover = icon_dir .. "onsticky.svg"
 
 --- Wibar
 theme.wibar_bg = "#101213"
-theme.wibar_height = dpi(35)
+theme.wibar_height = dpi(100)
 
 --- Music
 theme.music_bg = theme.black
@@ -224,7 +224,7 @@ theme.border_color_maximized = theme.titlebar_bg
 theme.border_color_fullscreen = theme.titlebar_bg
 
 --- Corner Radius
-theme.border_radius = 12
+theme.border_radius = 20
 theme.rounded = dpi(20)
 
 --- Edge snap
@@ -289,10 +289,11 @@ theme.layoutlist_shape_selected = helpers.ui.rrect(theme.bbleachbitorder_radius)
 theme.layoutlist_bg_selected = theme.widget_bg
 
 --- Gaps
-theme.useless_gap = dpi(2)
+-- theme.useless_gap = 50
+beautiful.useless_gap = dpi(20)
 
 --- Systray
-theme.systray_icon_size = dpi(30)
+theme.systray_icon_size = dpi(70)
 theme.systray_icon_spacing = dpi(10)
 theme.bg_systray = theme.wibar_bg
 --- theme.systray_max_rows = 2

@@ -9,3 +9,7 @@
 !awesome/*
 !picom
 !picom/*
+!awesome
+!awesome/*
+!rofi
+!rofi/*

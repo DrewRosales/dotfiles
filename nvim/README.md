@@ -37,5 +37,5 @@ Built on [LazyVim](https://www.lazyvim.org/)
 * git
 * cargo (for Mason)
 * wget (for Mason)
-* python3 (for Mason)
-
+* python3 (for Mason) -> `sudo apt install python3.12-venv`
+* luarocks (for Mason) -> `sudo apt install luarocks`

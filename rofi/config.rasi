@@ -1,0 +1,13 @@
+/* Rofi config file */
+configuration {
+    font: "RobotoMono Nerd Font";
+    show-icons: true;
+    display-window: "Window";
+    display-drun: "Search";
+}
+
+@theme "tokyonight"
+
+listview {
+    lines: 12;
+}
